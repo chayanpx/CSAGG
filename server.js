@@ -36,7 +36,7 @@ app.post('/api/user/login', (req, res) => {
             res.status(401).send('error laew ka')
         }
         else if (data.rows[0] == undefined) {
-            res.status(401).send('undefined')
+            res.status(401).send('oiy undefined')
         }
         else {
             if (data.rows[0]['password'] != password) {
